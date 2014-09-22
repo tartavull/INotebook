@@ -20,7 +20,8 @@ mkdir -p ${SYSROOT}/opt/
 rsync -a ~/INotebook/dist/INotebook/linux64/ ${SYSROOT}/opt/inotebook/ --delete
 
 find ${SRC}/ -type d -exec chmod 0755 {} \;
-find ${SRC}/ -type f -exec chmod go-w {} \;
+find ${SRC}/ -type f -exec chmod 0644 {} \;
+chmod ${SYSROOT}/opt/inotebook/INotebook -exec chmod 0755 {} \;
 chown -R root:root ${SRC}/
 
 let SIZE=`du -s ${SYSROOT} | sed s'/\s\+.*//'`+8
@@ -36,7 +37,7 @@ pushd ${DIST}/
 echo 2.0 > ./debian-binary
 
 find ${DIST}/ -type d -exec chmod 0755 {} \;
-find ${DIST}/ -type f -exec chmod go-w {} \;
+find ${DIST}/ -type f -exec chmod 0644 {} \;
 chown -R root:root ${DIST}/
 ar r ${DIST}/inotebook.deb debian-binary control.tar.gz data.tar.gz
 popd

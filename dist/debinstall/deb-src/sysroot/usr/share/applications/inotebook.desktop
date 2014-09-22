@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=INotebook
+GenericName=IPython Editor
+Comment=Edit notebooks
+Exec=/opt/inotebook/INotebook --notebook=%U"
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=inotebook
+Categories=TextEditor;
+Actions=Window;Document;
+Keywords=IPython;Notebook;
+Name[en_US]=inotebook.desktop
+

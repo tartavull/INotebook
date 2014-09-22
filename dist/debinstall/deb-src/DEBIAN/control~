@@ -1,0 +1,9 @@
+Package: inotebook
+Version: 0.0.1
+Section: base
+Priority: optional
+Architecture: amd64
+Installed-Size: SIZE
+Depends:
+Maintainer: Ignacio Tartavull <tartavull@gmail.com>
+Description: INotebook let you open IPython notebook files

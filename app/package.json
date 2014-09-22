@@ -1,0 +1,11 @@
+{
+	"name": "INotebook",
+	"main": "index.html",
+	"version" : "0.0.1",
+	"window": {
+		"toolbar": false
+	},
+	"dependencies": {
+		"ipython-notebook-proxy": "~0.0.2"
+	}
+}

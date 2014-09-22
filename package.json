@@ -1,0 +1,10 @@
+{
+	"name": "INotebook",
+	"version": "0.0.1",
+	"description": "IPython Notebook File Viewer",
+	"author": "Ignacio Tartavull",
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-node-webkit-builder": "^0.2.3"
+	}
+}

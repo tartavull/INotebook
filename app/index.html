@@ -4,13 +4,6 @@
 	<script type="text/javascript" src="controller/kernel.js"></script>
 	<script type="text/javascript">
 
-		var gui = require('nw.gui');
-		var win = gui.Window.get();
-
-		gui.App.on('open', function(cmdline) {
-  			console.log('command line: ' + cmdline);
-		});
-
 		ipython.init(gui.App.fullArgv, function(urlpath , port){
 
 			if(urlpath){
@@ -18,14 +11,42 @@
 					var url = "http://localhost:"+port+"/"+urlpath;
 					console.log(url);
 					location.href = url;
-				}, 3000);
+				}, 2000);
 
 
 			}
 		});   
 	</script>
+	  <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: table;
+        }
+
+        .my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        h1 {
+
+        	color:#C6DAEA;
+        	font-size: 60px;
+        }
+        </style>
 </head>
 <body>
-	<h1>Works!</h1>
+    <div class="my-block">
+
+	<h1 style="">INotebook</h1>
+	</div>
 </body>
 </html>
